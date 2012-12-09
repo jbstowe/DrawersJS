@@ -7,7 +7,7 @@ body{
 }
 
 .topColorBar{
-	background:url(../crossBackground.png);
+	background:url(../img/crossBackground.png);
 	width:100%;
 	height:400px;
 	display: inline-block;
@@ -24,7 +24,7 @@ body{
 }
 
 #blackBar{
-	background:url(../blackBar.jpg) repeat-x;
+	background:url(../img/blackBar.jpg) repeat-x;
 	width:100%;
 	height:50px;
 }
@@ -52,25 +52,25 @@ body{
 }
 
 .icon_help{
-	background:url(../help-tab.png);
+	background:url(../img/help-tab.png);
 	width:50px;
 	height:50px;
 }
 
 .icon_cogwheel{
-	background:url(../cog-tab.png);
+	background:url(../img/cog-tab.png);
 	width:50px;
 	height:50px;
 }
 
 .icon_drawers{
-	background:url(../drawers-tab.png);
+	background:url(../img/drawers-tab.png);
 	width:50px;
 	height:50px;
 }
 
 .icon_marker{
-	background:url(../marker-tab.png);
+	background:url(../img/marker-tab.png);
 	width:50px;
 	height:50px;
 }
