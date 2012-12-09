@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>jQuery Plugins</title>
+	<link rel="stylesheet" href="css/drawerJS.css">
+	<link href="css/prettify.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="js/prettify.js"></script>
+</head>
+<body onload="prettyPrint()">
+	<div class="topColorBar">
+		<h1>Drawers.js</h1>
+			
+			<p class="container">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus fuga porro consequatur doloremque tempore nisi nostrum numquam illo magnam obcaecati dicta inventore quibusdam iusto amet hic neque asperiores itaque eligendi!	
+			</p>
+	</div>
+	<div id="blackBar"></div>	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/drawers.js"></script>
+
+<!-- Live Reload -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+<div class="container">
+
+
+	<div class="drawer2 theme_1">
+		<a href="" class="icon_cogwheel"></a>
+		<div>
+			<!-- <ul>
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li>
+			</ul> -->
+			
+			<form id="createDrawer">
+				<h3>Create Your Own Drawer</h3>
+				<label>Drawer Name:</label>
+				<input type="text" name="Drawername"><br/><br/>
+				<label>Distance from top:</label>
+				<input type="text" name="top"><br/></br>
+				<label>Height:</label>
+				<input type="text" name="height"><br/></br>
+				<label>Width:</label>
+				<input type="text" name="width"><br/></br>
+				<label>Side:</label>
+				<select id="side">
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</select><br/><br/>
+				<label>Tab Image:</label>
+				<select id="tab-image">
+					<option value="icon_cogwheel">Cog Wheel</option>
+					<option value="icon_help">Help</option>
+				</select><br/><br/>
+				<label id="label-textarea">Text</label><br/>
+				<textarea id="content"></textarea>
+				<input type="submit" value="Create Drawer!">
+			</form>
+		</div>
+	</div>
+	
+	<div class="donateDrawer theme_1">
+		<a href="#" class="icon_help"></a>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio necessitatibus et nesciunt dolor dolores deserunt voluptatum officia delectus hic commodi est molestias sunt id tempora molestiae sapiente quibusdam corporis fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima excepturi voluptas rem deleniti ex ullam aspernatur in quae assumenda earum porro illo enim iste mollitia consectetur fugit accusamus error repudiandae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae praesentium reprehenderit nobis necessitatibus laudantium. Omnis corporis tempora totam dolor ex quasi quisquam dolorum eligendi officiis vitae et doloremque ad voluptatem?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi commodi asperiores eius sapiente accusamus itaque nisi sed nostrum aut esse laudantium soluta dolore veritatis nam neque voluptatem eum adipisci placeat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt accusamus inventore debitis at sint veniam impedit reiciendis deleniti quae iusto atque repellat. Sunt quo vitae perferendis nihil recusandae asperiores repudiandae!</p>
+		</div>
+	</div>
+	
+	<div class="menuDrawer theme_1">
+		<a href="#" class="icon_drawers"></a>
+		<div>
+			<ul>
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="mapDrawer theme_1">
+		<a href="#" class="icon_marker"></a>
+		<div></div>
+	</div>
+	
+	<div>
+		<pre class="prettyprint linenums lang-html prettyprinted">
+&lt;div&gt;
+	
+&lt;/div&gt;
+		</pre>
+	</div>
+	
+	<span id="newDrawerContent"></span>
+<div><!-- /container -->
+
+
+
+<style>
+.container{width:1020px;margin:auto;height:4000px;}
+.drawer div{
+
+	background:lightblue;
+}
+
+.drawer > a{
+	background:url(slide-button-left.png);
+	width:40px;
+	height:100px;
+}
+
+
+</style>
+
+
+
+<script>
+
+$('.drawer2').drawer({
+	top:20,
+	drawerWidth:300,
+	drawerHeight:390,
+	position:'right',
+	sticky:'true'
+});
+
+$('.donateDrawer').drawer({
+	top:20,
+	drawerHeight:300,
+	drawerWidth:300,
+	position:'left',
+	sticky:'true'
+})
+
+$('.menuDrawer').drawer({
+	top:80,
+	drawerHeight:300,
+	drawerWidth:300,
+	position:'right',
+	sticky:'true'
+})
+
+$('.mapDrawer').drawer({
+	top:140,
+	drawerHeight:300,
+	drawerWidth:300,
+	position:'right',
+	sticky:'false'
+})
+</script>
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
+
+
+
